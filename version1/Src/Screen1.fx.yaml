@@ -35,8 +35,8 @@ Screen1 As screen:
         Y: =40
         ZIndex: =1
 
-        Gallery2 As gallery.galleryVertical:
-            Fill: =RGBA(255, 255, 255, 1)
+        Gallery2 As gallery.variableTemplateHeightGallery:
+            Fill: =RGBA(0, 255, 255, 1)
             Height: =208
             Items: |-
                 =[{id:1,expended:false},{id:2,expended:false},{id:3,expended:false},{id:4,expended:false}]
