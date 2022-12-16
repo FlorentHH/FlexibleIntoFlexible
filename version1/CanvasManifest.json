@@ -95,11 +95,11 @@
     "Id": "863bb741-111c-448b-92a1-474a658f09da",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "Demo Flexible Gallery",
+    "Name": "Demo Flexible Gallery2",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
-    "AppName": "Demo Flexible Gallery",
+    "AppName": "Demo Flexible Gallery2",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
