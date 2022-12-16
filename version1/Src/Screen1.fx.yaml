@@ -1,5 +1,31 @@
 Screen1 As screen:
 
+    Gallery3 As gallery.variableTemplateHeightGallery:
+        Height: =445
+        Items: |-
+            =[{id:1,expended:false},{id:2,expended:false},{id:3,expended:false},{id:4,expended:false}]
+        Layout: =Layout.Vertical
+        TemplatePadding: =4
+        TemplateSize: =280
+        X: =726
+        Y: =323
+        ZIndex: =1
+
+        Label1_2 As label:
+            Color: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(186, 202, 226, 1)
+            Height: =If(Toggle1_2.Value=true,80,40)
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Value.id
+            Visible: =
+            ZIndex: =1
+
+        Toggle1_2 As toggleSwitch:
+            OnSelect: =Select(Parent)
+            X: =528
+            Y: =6
+            ZIndex: =2
+
     Gallery1 As gallery.variableTemplateHeightGallery:
         Fill: =RGBA(237, 0, 0, 1)
         Items: =CustomGallerySample
@@ -10,10 +36,28 @@ Screen1 As screen:
         ZIndex: =1
 
         Gallery2 As gallery.galleryVertical:
-            Height: =280
-            Items: =CustomGallerySample
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =208
+            Items: |-
+                =[{id:1,expended:false},{id:2,expended:false},{id:3,expended:false},{id:4,expended:false}]
             Layout: =Layout.Vertical
-            TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+            TemplateSize: =42
             Width: =630
+            Y: =33
             ZIndex: =1
+
+            Label1 As label:
+                Color: =RGBA(0, 18, 107, 1)
+                Fill: =RGBA(186, 202, 226, 1)
+                Height: =If(Toggle1.Value=true,80,40)
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.Value.id
+                Visible: =
+                ZIndex: =1
+
+            Toggle1 As toggleSwitch:
+                OnSelect: =Select(Parent)
+                X: =528
+                Y: =6
+                ZIndex: =2
 
