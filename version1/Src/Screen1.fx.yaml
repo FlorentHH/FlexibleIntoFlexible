@@ -1,6 +1,7 @@
 Screen1 As screen:
 
     Gallery1 As gallery.variableTemplateHeightGallery:
+        Fill: =RGBA(237, 237, 237, 1)
         Items: =CustomGallerySample
         Layout: =Layout.Vertical
         TemplateSize: =280
